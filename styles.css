@@ -1,0 +1,23 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @keyframes sprite {
+    to { background-position: -8640px }
+  }
+  
+  .terminal {
+    height: 1024px;
+    width: 1440px;
+    background: url("./sprite.png");
+    animation: sprite 1.5s steps(6) infinite;
+    transform: translate(-25%, -25%) scale(0.5);
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .terminal {
+      transform: scale(1);
+    }
+  }
